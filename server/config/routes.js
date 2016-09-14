@@ -1,3 +1,5 @@
+var mongooseController = require('../controllers/mongooses.js')
+
 module.exports = function(app){
 	app.post('/dummies/:test', function(req, res){
 		
