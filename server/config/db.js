@@ -8,13 +8,13 @@ mongoose.connect('mongodb://localhost/newDatabaseName');
 *  When successfully connected
 */
 mongoose.connection.on( 'connected', function () {
-  console.log( `Mongoose default connection open to ${ dbURI }` );
+  console.log( 'Mongoose default connection open to' );
 });
 /*
 *  If the connection throws an error
 */
 mongoose.connection.on( 'error', function ( err ) {
-  console.error( `Mongoose default connection error: ${ err }` );
+  console.error( 'Mongoose default connection error: ${ err }' );
 });
 /*
 *  When the connection is disconnected
