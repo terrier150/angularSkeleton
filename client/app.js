@@ -11,8 +11,13 @@ var myApp = angular.module('Myapp', ['ngRoute']);
 		$routeProvider
 			.when('/', 
 			{
-				controller: 'indexController',
-				templateUrl: "partials/index.html"
+				controller: 'usersIndex',
+				templateUrl: "partials/users/index.html"
+			})
+			.when("/users/new",
+			{
+				controller: 'usersNew',
+				templateUrl: "partials/users/new.html"
 			})
 	})
 }());
