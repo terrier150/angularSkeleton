@@ -1,6 +1,10 @@
-<h1>This is my index partial</h1>
-<div ng-repeat = "user in users">
-	<h1>{{user.first_name}}</h1>
-	<h1>{{user.last_name}}</h1>	
-</div>
+<h2>This is my index partial</h2>
 <a href = "#/users/new">New User</a>
+
+<div>
+	<ul>
+		<li ng-repeat = 'user in users'>
+			{{user.first_name}} {{user.last_name}}
+		</li>
+	</ul>
+</div>
